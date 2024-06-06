@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomfield Hall School Chess Club</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('b.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+        }
+        header h1 {
+            display: inline;
+            font-size: 2em;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        nav button:hover {
+            background-color: #111;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .section.active {
+            display: block;
+        }
+        .trap-list {
+            list-style-type: decimal;
+            font-size: 1.25em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="abc.jpg" alt="Logo">
+        <h1>Bloomfield Hall School Chess Club</h1>
+    </header>
+    <nav>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('study')">Study</button>
+        <button onclick="showSection('analyze')">Analyze</button>
+        <button onclick="showSection('players')">Players</button>
+    </nav>
+    <section id="home" class="section active">
+        <font size="5">Welcome to the Bloomfield Hall School Chess Club where you can study, do puzzles and much more.</font>
+        <p>Here is the daily puzzle of the day:</p>
+        <iframe src="https://lichess.org/training/frame?theme=brown&bg=dark" style="width: 400px; height: 444px;" allowtransparency="true" frameborder="0"></iframe>
+    </section>
+    <section id="study" class="section">
+        <p style="font-size: 1.25em;">Here is a study of 10 best traps:</p>
+        <ol class="trap-list">
+            <li>Noah's Ark Trap</li>
+        </ol>
+        <iframe width="600" height="371" src="https://lichess.org/study/embed/GMO3H83W/0640JCRS" frameborder="0"></iframe>
+        <ol class="trap-list" start="2">
+            <li>Legal Trap</li>
+        </ol>
+        <iframe width="600" height="371" src="https://lichess.org/study/embed/GMO3H83W/agzNRFbd" frameborder="0"></iframe>
+        <ol class="trap-list" start="3">
+            <li>Cambridge Springs Trap</li>
+        </ol>
+        <iframe width="600" height="371" src="https://lichess.org/study/embed/GMO3H83W/Ox0iDPho" frameborder="0"></iframe>
+        <ol class="trap-list" start="4">
+            <li>Lasker Trap</li>
+        </ol>
+        <iframe width="600" height="371" src="https://lichess.org/study/embed/GMO3H83W/rWDOerEi" frameborder="0"></iframe>
+        <ol class="trap-list" start="5">
+            <li>Rubinstein Trap</li>
+        </ol>
+        <iframe width="600" height="371" src="https://lichess.org/study/embed/GMO3H83W/eCP3tyJc" frameborder="0"></iframe>
+        <ol class="trap-list" start="6">
+            <li>Siberian Trap</li>
+        </ol>
+        <iframe width="600" height="371" src="https://lichess.org/study/embed/GMO3H83W/GWbIJmLc" frameborder="0"></iframe>
+        <ol class="trap-list" start="7">
+            <li>Fajarowicz Trap</li>
+        </ol>
+        <iframe width="600" height="371" src="https://lichess.org/study/embed/GMO3H83W/O4lO3JPi" frameborder="0"></iframe>
+        <ol class="trap-list" start="8">
+            <li>Blackburne Shilling Trap</li>
+        </ol>
+        <iframe width="600" height="371" src="https://lichess.org/study/embed/GMO3H83W/bgAaveqE" frameborder="0"></iframe>
+        <ol class="trap-list" start="9">
+            <li>Englund Gambit Trap</li>
+        </ol>
+        <iframe width="600" height="371" src="https://lichess.org/study/embed/GMO3H83W/t8vg75LF" frameborder="0"></iframe>
+        <ol class="trap-list" start="10">
+            <li>Fishing Pole Trap</li>
+        </ol>
+        <iframe width="600" height="371" src="https://lichess.org/study/embed/GMO3H83W/FcMi2yT5" frameborder="0"></iframe>
+    </section>
+    <section id="analyze" class="section">
+        <font size="5">Here are the games of the top players of Bloomfield Hall School Chess Club:</font>
+<p> Mhia8wh0 is M.Hussain Ishaq, Life-Destructor is M.Wajdan Younas and Dragon_Emperor_007 is Syed Musa Shah
+<iframe src="https://lichess.org/embed/game/ViG4KP7J?theme=auto&bg=auto"
+width=600 height=397 frameborder=0></iframe>
+<iframe src="https://lichess.org/embed/game/K54aBiUI?theme=auto&bg=auto"
+width=600 height=397 frameborder=0></iframe>
+<iframe src="https://lichess.org/embed/game/X9lcYFJy?theme=auto&bg=auto"
+width=600 height=397 frameborder=0></iframe>
+<iframe src="https://lichess.org/embed/game/rzfswYdB?theme=auto&bg=auto"
+width=600 height=397 frameborder=0></iframe>
+<iframe src="https://lichess.org/embed/game/LZPJU9UZ?theme=auto&bg=auto"
+width=600 height=397 frameborder=0></iframe>
+<iframe src="https://lichess.org/embed/game/qNsctPnN?theme=auto&bg=auto"
+width=600 height=397 frameborder=0></iframe>
+<iframe src="https://lichess.org/embed/game/aKWFy613?theme=auto&bg=auto"
+width=600 height=397 frameborder=0></iframe>
+<iframe src="https://lichess.org/embed/game/djUSv7ge?theme=auto&bg=auto"
+width=600 height=397 frameborder=0></iframe>
+    </section>
+    <section id="players" class="section">
+        <font size="5">Here is a table of the Bloomfield Hall School Chess Club's members:</font>
+        <table>
+            <tr>
+                <th>Previous Meeting's Ladder Ranking</th>
+                <th>Current Ladder Ranking</th>
+                <th>Player</th>
+                <th>Rating</th>
+                <th>Change Since Previous Meeting</th>
+                <th>Change From Three Months Ago</th>
+                <th>Last Meeting Matches (W-D-L)</th>
+                <th>Past Three Months Matches (W-D-L)</th>
+                <th>Overall Match Results (W-D-L)</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>M. Wajdan Younas</td>
+                <td>1,359</td>
+                <td>-15</td>
+                <td>-51</td>
+                <td>1-0-1</td>
+                <td>19-0-9</td>
+                <td>51-0-14</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>Saad Khan</td>
+                <td>1,252</td>
+                <td>-24</td>
+                <td>80</td>
+                <td>1-0-1</td>
+                <td>12-0-2</td>
+                <td>37-1-13</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>3</td>
+                <td>M. Hussain Ishaq</td>
+                <td>1,213</td>
+                <td>-22</td>
+                <td>-29</td>
+                <td>1-0-2</td>
+                <td>20-0-16</td>
+                <td>32-0-23</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>4</td>
+                <td>Mian Shaheer</td>
+                <td>1,184</td>
+                <td>41</td>
+                <td>52</td>
+                <td>2-0-0</td>
+                <td>4-0-1</td>
+                <td>17-0-9</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>5</td>
+                <td>Syed Musa Shah (Dragon Slayer)</td>
+                <td>1,063</td>
+                <td>12</td>
+                <td>91</td>
+                <td>2-0-0</td>
+                <td>15-0-4</td>
+                <td>26-1-15</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>6</td>
+                <td>Hassan Shehzad</td>
+                <td>957</td>
+                <td>-19</td>
+                <td></td>
+                <td>2-0-4</td>
+                <td>15-4-12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>7</td>
+                <td>Haseeb Shah</td>
+                <td>953</td>
+                <td></td>
+                <td></td>
+                <td>1-0-2</td>
+                <td>6-0-5</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>8</td>
+                <td>Uzair Mansoor</td>
+                <td>940</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>7-1-5</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>9</td>
+                <td>Syed Mustafa Shah</td>
+                <td>921</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>3-1-6</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>10</td>
+                <td>Sherbaz Khan</td>
+                <td>877</td>
+                <td></td>
+                <td></td>
+                <td>4-0-1</td>
+                <td>4-0-1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>11</td>
+                <td>Syed Rahim</td>
+                <td>877</td>
+                <td></td>
+                <td></td>
+                <td>12-1-3</td>
+                <td></td>
+                <td>17-1-4</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>12</td>
+                <td>Haysam Jhagra</td>
+                <td>872</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>3-0-0</td>
+                <td>5-1-5</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>13</td>
+                <td>Zain Ul Abideen</td>
+                <td>863</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>4-0-6</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>14</td>
+                <td>Hamza Khan</td>
+                <td>862</td>
+                <td>68</td>
+                <td>242</td>
+                <td>1-0-0</td>
+                <td>8-2-4</td>
+                <td>9-2-11</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>15</td>
+                <td>Shameer</td>
+                <td>855</td>
+                <td></td>
+                <td></td>
+                <td>2-1-4</td>
+                <td></td>
+                <td>2-2-6</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>16</td>
+                <td>Fahad Khan</td>
+                <td>840</td>
+                <td>-16</td>
+                <td>-62</td>
+                <td>0-0-2</td>
+                <td>1-0-10</td>
+                <td>13-1-24</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>17</td>
+                <td>Nasir Mehmood</td>
+                <td>836</td>
+                <td></td>
+                <td>-5</td>
+                <td></td>
+                <td>5-1-5</td>
+                <td>9-1-6</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>18</td>
+                <td>Abdul Rahman Aziz</td>
+                <td>816</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>4-0-5</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>19</td>
+                <td>Mustafa Zubair</td>
+                <td>811</td>
+                <td></td>
+                <td>48</td>
+                <td>1-0-0</td>
+                <td></td>
+                <td>1-0-2</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>20</td>
+                <td>Sannan</td>
+                <td>797</td>
+                <td>76</td>
+                <td></td>
+                <td>4-0-2</td>
+                <td></td>
+                <td>4-0-3</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>21</td>
+                <td>M. Hassaan</td>
+                <td>792</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1-0-2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>22</td>
+                <td>Abdul Basit</td>
+                <td>790</td>
+                <td></td>
+                <td></td>
+                <td>2-3-2</td>
+                <td></td>
+                <td>2-3-2</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>23</td>
+                <td>Rayyan Jan Durrani</td>
+                <td>758</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1-0-1</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>24</td>
+                <td>Mustafa Sikandar</td>
+                <td>750</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>0-0-2</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>25</td>
+                <td>M. Bilal</td>
+                <td>744</td>
+                <td>74</td>
+                <td>54</td>
+                <td>2-0-2</td>
+                <td>3-0-12</td>
+                <td>4-1-16</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>26</td>
+                <td>Abdul Rahman</td>
+                <td>730</td>
+                <td>-84</td>
+                <td>-120</td>
+                <td>0-0-2</td>
+                <td>11-0-23</td>
+                <td>13-1-29</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>27</td>
+                <td>Mikail</td>
+                <td>728</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>0-0-3</td>
+                <td>0-0-3</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>28</td>
+                <td>Ayan Khan</td>
+                <td>723</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>0-0-3</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>29</td>
+                <td>M. Rohan</td>
+                <td>722</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1-0-2</td>
+                <td>1-0-2</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>30</td>
+                <td>Azlan Afzal Afridi</td>
+                <td>718</td>
+                <td>23</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>0-0-3</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>31</td>
+                <td>Ahmed Mustufa</td>
+                <td>714</td>
+                <td>63</td>
+                <td>137</td>
+                <td></td>
+                <td></td>
+                <td>1-0-0</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>32</td>
+                <td>M.Essa Afridi</td>
+                <td>710</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>0-0-1</td>
+                <td>0-0-1</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>33</td>
+                <td>Zarbaz Khan</td>
+                <td>705</td>
+                <td></td>
+                <td></td>
+                <td>1-0-1</td>
+                <td>1-0-2</td>
+                <td>1-0-2</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>34</td>
+                <td>Ahmed Mustafa </td>
+                <td>678</td>
+                <td></td>
+                <td></td>
+                <td>0-0-2</td>
+                <td>2-0-3</td>
+                <td>4-0-3</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>35</td>
+                <td>Abu Bakr Sadiq</td>
+                <td>616</td>
+                <td></td>
+                <td></td>
+                <td>0-0-1</td>
+                <td>0-0-1</td>
+                <td>0-0-1</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>36</td>
+                <td>Kheizer Shah</td>
+                <td>482</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>2-0-1</td>
+                <td>2-0-1</td>
+            </tr>
+        </table>
+    </section>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
